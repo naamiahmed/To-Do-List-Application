@@ -35,3 +35,88 @@ button {
 button:hover {
   background-color: #d32f2f;
 }
+
+
+.task-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-input input {
+  padding: 8px;
+  flex: 1;
+}
+
+.task-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.task-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1;
+}
+
+.task-text {
+  flex: 1;
+}
+
+.task-text h3 {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.task-text p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.task-text small {
+  color: #999;
+}
+
+.completed {
+  background-color: #f8f8f8;
+}
+
+.completed .task-text h3 {
+  text-decoration: line-through;
+}
+
+.error-message {
+  color: #ff0000;
+  background-color: #ffe6e6;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.loading {
+  text-align: center;
+  color: #666;
+  padding: 10px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
