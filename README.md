@@ -37,7 +37,36 @@ The project is split into two directories:
 
 ### 1️⃣ Backend Setup
 
-1. **Clone the repository**:
-   ```bash
-   git clone <repository_url>
-   cd todo-app-backend
+# Clone the repository:
+git clone <repository_url>
+cd todo-app-backend
+
+# Install dependencies:
+npm install
+
+# Set up environment variables:
+# Create a .env file in the todo-app-backend directory and add the following:
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+
+# Run the backend server:
+npm run dev
+
+# The backend server will run at:
+http://localhost:5000
+
+---
+
+### 2️⃣ Frontend Setup
+
+# Navigate to the frontend directory:
+cd ../todo-app-frontend
+
+# Install dependencies:
+npm install
+
+# Start the React app:
+npm start
+
+# The frontend app will run at:
+http://localhost:3000
