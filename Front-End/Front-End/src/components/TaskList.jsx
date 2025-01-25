@@ -31,7 +31,7 @@ const TaskList = () => {
     try {
       const updatedTask = await TaskService.updateTask(id, updates);
       setTasks(tasks.map(task => (task._id === id ? updatedTask : task)));
-      setEditingTask(null); // Clear editing state after update
+      setEditingTask(null); 
     } catch (error) {
       console.error('Error updating task:', error);
     }
